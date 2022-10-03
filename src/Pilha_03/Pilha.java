@@ -65,11 +65,11 @@ public class Pilha {
     	return pilha[topo - 1];
     }
     
-    public void  mudar() {
-    int bas = pilha[base];
+    public void  inverter() {
+    base = pilha[base];
     int top  = pilha[topo];
 
-    pilha[topo] = bas ;
+    pilha[topo] = base ;
     pilha[base] = top;
 }
 

@@ -10,7 +10,7 @@ public class Main {
 
 		// TODO Auto-generated method stub
 		
-		Pilha a = new Pilha(4);
+		Pilha a = new Pilha(5);
 		boolean status_menu = true;
 		Scanner menu = new Scanner (System.in);
 		
@@ -22,6 +22,7 @@ public class Main {
 		        System.out.print("| Opção 2 - REMOVER ITEM       |\n");
 		        System.out.print("| Opção 3 - IMPRIMIR TAMANHO   |\n");
 		        System.out.print("| Opção 4 - IMPRIMIR ITEM TOPO |\n");
+		        System.out.print("| Opção 5 - INVERTER           |\n");
 		        System.out.print("| Opção 0 - SAIR               |\n");
 		        System.out.print("|------------------------------|\n");
 		        System.out.print("Digite uma opção: ");
@@ -52,6 +53,8 @@ public class Main {
 		        	System.out.println(a.tamanho()); 
 		        } else if (opcao == 4) {
 		        	System.out.println(a.exibeUltimoValor());
+		        } else if (opcao == 5) {
+		        	a.inverter();
 		        } 
 		        }
 			}	
