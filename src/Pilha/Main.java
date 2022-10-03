@@ -38,7 +38,7 @@ public class Main {
 
         if (opcao == 1) {
         	if (!a.cheio()) {       		
-        			a.adicionar();
+        			a.push();
         		} else {
         			System.out.println("Agenda cheia");
         		}
@@ -47,7 +47,7 @@ public class Main {
         	if (a.vazio()) {
         		System.out.println("Pilha vazia");
         	}else {
-        		a.remover();
+        		a.pop();
         		System.out.println("Removido");
         	}
         }else if (opcao == 3) {
@@ -64,7 +64,7 @@ public class Main {
         		a.novoTamanho(novosItens);
         		
         		for (int i = 0; i < novosItens; i++) {
-        			a.adicionar( );
+        			a.push( );
     			}
         	} 
 
@@ -75,9 +75,7 @@ public class Main {
         		System.out.println("Pilha vazia"); 
         	}
         		
-        } else if (opcao == 8) {
-        	a.mudar();
-        }
+        } 
         }
 	}	
 

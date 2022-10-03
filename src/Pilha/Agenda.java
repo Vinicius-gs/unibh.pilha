@@ -21,7 +21,7 @@ public class Agenda {
 	    	base = 0;
 	    }
 	    
-	    public void adicionar() {
+	    public void push() {
 	    	
     		System.out.print("Nome: ");
     		nome = menu.next();
@@ -38,7 +38,7 @@ public class Agenda {
 	    	}
 	    }
 	    
-	    public void remover() {
+	    public void pop() {
 	    	topo--;
 	    }
 	    
@@ -75,13 +75,5 @@ public class Agenda {
         	agendas = agendas2;
     }
         
-        public void  mudar() {
-        String bas = agendas[base];
-        String top  = agendas[topo];
-
-        agendas[topo] = bas ;
-        agendas[base] = top;
-    }
-
 
 }
